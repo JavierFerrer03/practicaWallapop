@@ -1,0 +1,501 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../assets/fonts/RobotoCondensed-Black.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Extra';
+    src: url("../assets/fonts/RobotoCondensed-ExtraLight.ttf");
+}
+body{
+    background: #081b26;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilos para la página donde se muestran todos los anuncios */
+.header_anuncios{
+    background: #081b26;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00a6bc;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.image_anuncios{
+    width: 400px;
+    text-align: center;
+}
+.img_anuncios{
+    width: 200px;
+}
+.div_title{
+    display: flex;
+    justify-content: space-around;
+}
+.title_anuncios{
+    margin-right: 10px;
+    margin-top: 40px;
+    font-family: 'Roboto';
+    font-size: 2rem;
+}
+.icono_user{
+    width: 50px;
+    height: 50px;
+    margin-top: 36px;
+}
+.container_anuncios{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.anuncios{
+    padding: 20px;
+    width: 30%;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid #00a6bc;
+    border-radius: 0.4rem;
+}
+.anuncios:hover{
+    box-shadow: 0 0 20px 0 #a600bc;
+}
+.link_anuncios{
+    color: #0ef;
+    text-decoration: none;
+}
+.link_anuncios:hover{
+    cursor: pointer;
+    color: #a600bc;
+}
+.button_anuncios{
+    background: #081b26;
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    height: 80px;
+}
+.button_anuncios:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 #00a6bc;
+    border-radius: 20px;
+}
+.filtradoNombre{
+    
+    display: flex;
+}
+.icono_filtrado{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.input_filtrado{
+    border: none;
+    outline: none;
+    background: none;
+    width: 260px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: #0ef;
+    border-bottom: 1px solid #eceff1;
+}
+.button_buscar{
+    border: none;
+    background: #081b26;
+    color: #00a6bc;
+    margin-left: 5px;
+    border-radius: 0.4rem;
+    width: 100px;
+    height: 40px;
+}
+.button_buscar:hover{
+    box-shadow: 0 0 20px 0 #00a6bc;
+}
+.main_anuncios{
+    display: flex;
+}
+.div_subtitle{
+    background: #081b26;
+    position: fixed;
+    width: 68%;
+}
+.subtitle_anuncios{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    border-bottom: 1px solid #00a6bc;
+    padding-bottom: 20px;
+    margin: 10px;
+}
+.imagenes{
+    width: 400px;
+    margin-top: 20px;
+    border-radius: 0.6rem;
+}
+.section_index{
+    /*border: 1px solid red;*/
+    width: 70%;
+}
+.anuncios_localidad{
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+.anuncios_image{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 17px;
+}
+.h5_anuncios{
+    color: white;
+}
+.aside_anuncios{
+    border-left: 1px solid #00a6bc;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.buttons{
+    background: #081b26;
+    position: fixed;
+    top: 10;
+    margin-left: 130px;
+}
+.div_aside{
+    border-bottom: 1px solid #a600bc;
+    border-top: 1px solid #a600bc;
+    text-align: center;
+    height: 100px;
+    padding-top: 20px;
+    margin: 80px 10px 10px 10px;
+}
+.footer_anuncios{
+    display: flex;
+    justify-content: end;
+    padding: 20px;
+}
+/* Estilos para la página sobre la inserción de nuevos anuncios */
+.title_newAnuncio{
+    text-align: center;
+    border-bottom: 1px solid #00a6bc;
+    font-family: 'Roboto';
+}
+.form_newAnuncio{
+    border: 1px solid #a600bc;
+    border-radius: 0.6rem;
+    width: 800px;
+    margin: 100px auto;
+    text-align: center;
+    box-shadow: 0 0 20px 0 #00a6bc;
+}
+.subtitle_newAnuncio{
+    border-bottom: 1px solid #a600bc;
+    margin: 30px 10px 10px 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+}
+.input_newAnuncio{
+    border: none;
+    outline: none;
+    background: #081b2659;
+    width: 260px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: #0ef;
+    border-bottom: 2px solid #eee;
+}
+.editor_texto{
+    margin-top: 20px;
+}
+::-webkit-input-placeholder{
+    color: #eee;
+}
+.button_anuncio{
+    margin: 20px;
+    width: 130px;
+    background: #081b2659;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    height: 50px;
+}
+.button_anuncio:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 #00a6bc;
+    border-radius: 20px;
+}
+.link_volver{
+    color: #fff;
+    text-decoration: none;
+}
+/* Estilos para la página registro */
+.main_registro{
+    border: 1px solid #a600bc;
+    box-shadow: 0 0 20px 0 #00a6bc;
+    border-radius: 0.6rem;
+    width: 800px;
+    margin: 90px auto;
+}
+.title_registro{
+    text-align: center;
+    font-family: 'Roboto';
+    border-bottom: 1px solid #a600bc;
+    margin: 20px 10px 10px 10px;
+}
+.form_registro{
+    text-align: center;
+}
+.input_registro{
+    border: none;
+    outline: none;
+    background: #081b2659;
+    width: 260px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: #0ef;
+    border-bottom: 2px solid #eee;
+}
+.span{
+    text-align: center;
+    margin-top: 20px;
+}
+/*  Estilos para la página de mostrar los anuncios de cada usuario */
+.main_misAnuncios{
+    display: flex;
+}
+.section_misAnuncios{
+    width: 70%;
+}
+.subtitle_misAnuncios{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+    border-bottom: 1px solid #00a6bc;
+    padding-bottom: 20px;
+}
+.div_textarea{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+/* Estilos para la página de ver mi anuncio */
+.main_verAnuncio{
+    border: 1px solid #00a6bc;
+    box-shadow: 0 0 20px 0 #a600bcd2;
+    border-radius: 0.3rem;
+    width: 900px;
+    margin: 30px auto;
+}
+.title_verAnuncio{
+    text-align: center;
+    font-family: 'Roboto';
+    border-bottom: 1px solid #a600bc;
+    margin: 20px 10px 10px 10px;
+}
+.article_verAnuncio{
+    display: flex;
+    flex-direction: column;
+}
+.h2_verAnuncio{
+    font-family: 'Roboto Extra';
+    margin-bottom: 0px;
+    padding-left: 30px;
+}
+.h3_verAnuncio{
+    font-family: 'Roboto Extra';
+    margin-top: 0px;
+    padding-left: 30px;
+}
+.datos_usuario{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00a6bc;
+}
+.div_usuarioAnuncio{
+    display: flex;
+    width: 50%;
+    margin-left: 20px;
+}
+.usuario_button{
+    width: 40%;
+}
+.button_mg{
+    width: 100px;
+    margin-top: 22px;
+    margin-left: 70%;
+    background-color: #eceff1;
+    border-radius: 25px;
+    border: #eceff1;
+    min-width: 90px;
+    min-height: 40px;
+    font-size: 1rem;
+}
+.button_mg:hover{
+    cursor: pointer;
+    background-color: rgb(240, 48, 48);
+    box-shadow: 0 0 20px 0 rgb(240, 48, 48);
+    color: #fff;
+    font-size: 1rem;
+}
+.usuario_img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.usuario_h5{
+    font-size: 1.1rem;
+}
+.poblacion_verAnuncio{
+    border-top: 1px solid #00a6bc;
+}
+.iframe_poblacion{
+    display: flex;
+    justify-content: center;
+}
+.anuncios_poblacion{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+.button_verAnun{
+    margin: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #00a6bc;
+}
+.fotosAnuncios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #00a6bc;
+}
+.imgAnuncios{
+    width: 400px;
+    margin: 10px;
+    border-radius: 0.5rem;
+}
+.imgAnuncios:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 #00a6bc;
+}
+
+.infoPropietario{
+    border-top: 1px solid #00a6bc;
+    margin: 20px;
+}
+.titlePropietario{
+    text-align: center;
+    border-bottom: 1px solid #00a6bc;
+}
+.link_correo{
+    text-decoration: none;
+    color: #eceff1;
+}
+.link_correo:hover{
+    color: #00a6bc;
+}
+/* Estilos para la página de editar el anuncio */
+.div_image {
+    position: relative;
+    display: inline-block;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+}
+.photo_add{
+    display: flex;
+    justify-content: center;
+}
+.button_eliminar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: red; /* Puedes ajustar el estilo a tus necesidades */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+input[type="file"] {
+    margin-top: 10px; /* Ajusta el margen según tu diseño */
+}
+.imagen_editar{
+    width: 300px;
+    margin-top: 20px;
+    border-radius: 0.6rem;
+}
+.button_remove{
+    background: #081b26;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 0.4rem;
+}
+.button_remove:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 #a600bcd3;
+    border-radius: 0.4rem;
+}
+/* Estilos para el footer de todas las páginas */
+.footer{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #00a6bc;
+}
+.footer_categorias{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_footer{
+    text-align: center;
+    border-bottom: 1px solid #00a6bc;
+    width: 100%;
+}
+.link_items{
+    text-decoration: none;
+    color: #eceff1;
+}
+.link_items:hover{
+    color: #00a6bc;
+}
+.list_disorder{
+    list-style: none;
+    width: 300px;
+}
+.footer_redesSociales{
+    width: 33%;
+}
+.div_iconos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.icono_footer{
+    width: 50px;
+    height: 50px;
+}
+.mensajeVerAnuncios{
+    width: 800px;
+    margin: 30px auto;
+}
+.titleVerAnuncios{
+    text-align: center;
+}
