@@ -14,5 +14,5 @@
     //$DB_PASS = getenv("DB_PASSWORD");
     //$DB_DB = getenv("DB_NAME");
 
-    $conect = mysqli_connect($BD_HOST, $DB_USER, $DB_PASS, $DB_DB);
+    //$conect = mysqli_connect($BD_HOST, $DB_USER, $DB_PASS, $DB_DB);
 ?>
